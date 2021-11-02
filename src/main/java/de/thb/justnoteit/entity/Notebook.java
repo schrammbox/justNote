@@ -12,7 +12,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "schrammc_db_Notebook")
+@Entity
 public class Notebook {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

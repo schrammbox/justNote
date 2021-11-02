@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Notebooks</title>
+</head>
+<body>
+    <h1>Meine Notebooks im Überblick</h1>
+    <ul>
+        <li th:each="notebook: ${notebooks}">
+            <span th:text="${notebook.title}"></span>
+            <a th:href="@{notebooks/{id}(id=${notebook.id})}">Details</a>
+        </li>
+    </ul>
+
+    <h2>Neues Notizbuch anlegen</h2>
+        <form action="" method="post">
+            <b><p>Titel:</p></b>
+            <input type="text" name="title">
+
+            <b><p>Beschreibung:</p></b>
+            <input type="text" name="description">
+
+            <input type="submit" name="Notizbuch anlegen">
+        </form>
+
+
+</body>
+</html>

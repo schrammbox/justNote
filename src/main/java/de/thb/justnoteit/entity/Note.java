@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "schrammc_db_Note")
+@Entity
 public class Note {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
